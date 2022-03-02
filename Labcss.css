@@ -1,0 +1,76 @@
+
+.conteiner {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 20px 0;
+}
+.fat{
+    font-weight: bolder;
+    font-size:25px;
+}
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75%;
+}
+
+.photo,
+.author {
+    display: inline-block;
+}
+
+.author {
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+h3 {
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+}
+h2{
+    font-size: 30px;
+}
+
+
+.tex {
+    text-align: left;
+    font-size: 22px;
+}
+
+
+li {
+    margin: 10px 0;
+    font-size: 22px;
+
+}
+
+.contacts {
+    text-align: right;
+}
+
+
+.block li{
+    list-style:none;
+}
+
+ul.hr {
+    margin: 0; /* Обнуляння значень полів */
+    padding: 4px; /* Значення полів */
+}
+ul.hr li {
+    display: inline; /* в стовпець */
+    margin-right: 5px; /* відступ зліва */
+    border: 1px solid #000; /* Рамка */
+    padding: 3px; /* Поля навколо тексту */
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
