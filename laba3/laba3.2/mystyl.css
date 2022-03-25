@@ -1,0 +1,48 @@
+
+
+body {
+    font-family: Verdana;
+}
+h1{
+    color: green;
+}
+
+article header p{
+    background-color:red;
+    color:white;
+}
+
+article figure{
+    width:600px;
+    border: 3px solid black;
+    padding:5px;
+}
+article figure img{
+    width: 100%;
+}
+
+article{
+    width:800px;
+}
+
+.btn{
+    display: block;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    line-height:50px;
+    text-decoration: none;
+    color: #000;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.btn:hover{
+    background:#000;
+    color: #fff;
+}
