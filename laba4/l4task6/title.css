@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    background-color: aquamarine;
+
+
+}
+h1:before,
+h1:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    height: 4px;
+    background-color: #000;
+
+}
+h1:before{
+    margin-left: -100%;
+
+}
+h1:after{
+    margin-right: -100%;
+
+}
