@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+}
+li::before {
+    margin-right: 10px;
+}
+.pika::before {
+    content: "\2660";
+}
+.hrest::before {
+    content: "\2663";
+}
+.romb::before {
+    content: "\2666";
+    color: red;
+}
+.serce::before {
+    content: "\2665";
+    color: red;
+}
