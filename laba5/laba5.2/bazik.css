@@ -1,35 +1,36 @@
 .sky{
-background-color: #73C5BE;
-    width: 1200px;
-    height: 900px;
+background-color: #81ccc7;;
+    width: 600px;
+    height: 450px;
     border: 1px solid black;
     position:relative;
 }
 
 .clouds{
-    width: 600px;
-    height: 500px;
+    width: 300px;
+    height: 250px;
     position: absolute;
-    right: 5%;
+    right: 30%;
+    top:10px;
 }
 
 .water{
-    width: 1200px;
-    height: 200px;
+    width: 600px;
+    height: 100px;
     position: relative;
     top: 89%;
 }
 
 .world{
-    width: 1200px;
-    height: 600px;
+    width: 600px;
+    height: 300px;
     position: absolute;
     bottom: 15%;
 }
 
 .ship{
-    width: 240px;
-    height: 200px;
+    width: 120px;
+    height: 100px;
     position: absolute;
     bottom:13%;
     left: 5%;
