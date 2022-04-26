@@ -1,0 +1,76 @@
+
+.main{
+    width: 250px;
+    height: 400px;
+    border: 3px solid #609d9e;
+    border-radius: 10px;
+    float: left;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+.line{
+    width: 252px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    background-color: #609d9e;
+}
+.inputer{
+    position: relative;
+    top: 15px;
+    left: 5px;
+    width: 235px;
+    height: 30px;
+    font-size: 30px;
+    border: 3px solid #609d9e;
+    border-radius: 5px;
+    color: #609d9e;
+    text-align:right;
+}
+.wind{
+    position: relative;
+    width: 103px;
+    height: 35px;
+    left: 140px;
+    top: 25px;
+    background-color: #609d9e;
+}
+.button{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border: 3px solid #609d9e;
+    border-radius: 10px;
+    user-select: none;
+}
+.button1{
+    margin-top: 45px;
+}
+.button:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+
+}
+.button:active{
+    background-color: black;
+
+}
+p{
+    margin-top: 30%;
+    text-align: center;
+    color: #609d9e;
+    font-weight: bold;
+    font-size: 18px;
+}
+.name{
+    color: white;
+    margin-top: 0%;
+    position: absolute;
+    left: 160px;
+    top: 10px;
+    user-select: none;
+    font-size: 16px;
+}

@@ -1,0 +1,49 @@
+
+
+.fullwrap {
+    margin: 50px auto;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    border: 1px solid black;
+}
+.header {
+    width: 380px;
+    height: 60px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    border: 1px solid black;
+}
+.wrap{
+    width: 380px;
+    height: 300px;
+    position: absolute;
+    top: 78px;
+    left: 9px;
+    border: 1px solid black;
+}
+.main{
+    width: 210px;
+    height: 281px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    border: 1px solid black;
+}
+.sidebar{
+    width: 138px;
+    height: 281px;
+    position: absolute;
+    top: 9px;
+    left: 230px;
+    border: 1px solid black;
+}
+.footer {
+    width: 380px;
+    height: 100px;
+    position: absolute;
+    top: 388px;
+    left: 9px;
+    border: 1px solid black;
+}
