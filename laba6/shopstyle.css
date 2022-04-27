@@ -1,0 +1,217 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.window{
+    margin: 0px auto;
+    width:1004px;
+    min-height:450px;
+    border:1px solid lightgrey;
+    position: relative;
+    margin-top: 5%;
+}
+.card{
+    min-height:450px;
+    width:160px;
+    background-color:whitesmoke;
+    float:left;
+    border-right: 1px solid lightgrey;
+    padding:0px 20px;
+    position: relative;
+    outline-offset: initial;
+}
+
+.card:last-child{
+    border-right: 0px;
+}
+.kategori{
+    font-size:14px;
+    text-align:center;
+    height:10%;
+    width:80%;
+    position: absolute;
+    top:40px;
+    left:10%;
+    border-bottom:1px solid lightgrey;
+    padding-bottom:5px;
+    color: #707070;
+}
+img{
+    position:absolute;
+    top:105px;
+    left:26px;
+    width:148px;
+    height:188px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.name{
+    font-size:14px;
+    text-align:center;
+    height:12%;
+    width:80%;
+    position: absolute;
+    top:310px;
+    left:10%;
+    overflow: hidden;
+}
+.button{
+    font-size:14px;
+    text-align:center;
+    height:20px;
+    width:70%;
+    position: absolute;
+    bottom:10px;
+    background-color: yellow;
+    padding: 18px 10px 12px 10px;
+    color: black;
+
+}
+.button_first{
+    background-color: hotpink;
+    padding: 10px 10px 20px 10px;
+    color: whitesmoke;
+}
+.price{
+    font-size:14px;
+    text-align:center;
+    height:5%;
+    width:80%;
+    position: absolute;
+    top:365px;
+    left:10%;
+    font-weight: bold;
+}
+.old_price{
+    text-decoration: line-through;
+    font-size:12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span{
+    text-decoration: none;
+    font-size:14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sticker{
+    position:absolute;
+    z-index: 1;
+    right:8px;
+    top:-30px;
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    border: 1px solid lightgrey;
+    background-color: #8E7C23;
+    text-align:center;
+    z-index: 999999;
+    color: white;
+}
+.sticker_hit{
+    background-color: lightskyblue;
+}
+.text{
+    margin-top:40%;
+    font-size:11px;
+    text-align:center;
+}
+.text2{
+    margin-top:27%;
+    font-size:11px;
+    text-align:center;
+}
+
+.switch{
+    position:absolute;
+    z-index:1;
+    width: 30px;
+    height: 30px;
+    right: -17px;
+    top: 75px;
+    border-radius:50%;
+    border: 1px solid;
+    border:1px solid lightgrey;
+    background-color: white;
+    text-align:center;
+    z-index: 999999;
+}
+.switch:nth-child(2){
+    left: -17px;
+}
+.switch:hover{
+    background-color:grey;
+    cursor:pointer;
+    transition: 0.2s linear;
+}
+
+.card:nth-child(n+4)>.button:hover
+{
+    background-color:grey;
+    cursor:pointer;
+    color:black;
+    transition: 0.2s linear;
+}
+.card:nth-child(n+4)>.button:active
+{
+    background-color:black;
+    cursor:pointer;
+    color:white;
+}
+.photo:hover{
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
+.button>p{
+    font-weight: bold;
+}
+a{
+    text-decoration:none;
+    font-weight: bold;
+    color: #4682b4;
+    text-transform: uppercase;
+}
+.nr{
+    text-decoration:none;
+    font-weight: normal;
+    color: grey;
+    text-transform: uppercase;
+}
+.nadpus{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.div{
+    margin: 20px auto;
+    width:1004px;
+    position: relative;
+    height: 30px;
+}
+p{
+    text-transform: uppercase;
+}
+i{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.right {
+    transform: rotate(-45deg);
+    right: 11px;
+    top: 8px;
+    position:absolute;
+}
+
+.left {
+    transform: rotate(135deg);
+    text-align: center;
+    font-size:16px;
+    position:absolute;
+    left: 11px;
+    top: 8px;
+}
