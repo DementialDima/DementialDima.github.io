@@ -1,0 +1,49 @@
+*{
+    color: black;
+    text-transform: uppercase;
+}
+.social{
+    margin: 2% 45%;
+}
+h3{
+    margin: 10% 39.5%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.fa{
+    width: 16px;
+    height: 16px;
+    background-size: 78px 52px;
+}
+.fa-skp{
+    background-image: url('foto.png');
+    background-position-y: -15px;
+    background-position-x: -37px;
+}
+.fa-tdwitter{
+    background-image: url('foto.png');
+    background-position-y: 0px;
+    background-position-x: -24px;
+}
+.fa-ydoutube{
+    background-image: url('foto.png');
+    background-position-y: 0px;
+    background-position-x: -38px;
+}
+.fa-sdpotify{
+    background-image: url('foto.png');
+    background-position-y: -29px;
+    background-position-x: 1px;
+}
+.fa-fcb{
+    background-image: url('foto.png');
+    background-position-y: 0px;
+    background-position-x: -11px;
+}
+.fa-ins{
+    background-image: url('foto.png');
+    background-position-y: 0px;
+    background-position-x: 1px;
+}
