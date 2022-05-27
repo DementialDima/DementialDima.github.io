@@ -1,0 +1,231 @@
+/*
+* Background Images - Practice
+* CSS Styles
+*
+*/
+
+
+/* General */
+*{
+    color: white;
+    text-transform: uppercase;
+}
+/* Header */
+header{
+    background-image: url('../img/bg-01.jpg');
+    background-size:cover;
+    padding-bottom: 10%;
+    background-position-y: -200px;
+    width:100%;
+    font-family: 'Open Sans';
+}
+a{
+    text-decoration: none;
+    z-index: 2;
+}
+li:first-child{
+    background-color: #ff0039;
+    margin-left: 10%;
+    z-index: 1333333;
+    font-family: 'Open Sans';
+}
+#topbar{
+    background-color: rgba(0,0,0,0.5);
+}
+li{
+    display: inline-block;
+}
+li>a{
+    display:block;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1;
+}
+li:hover{
+    background: rgb(228,100,0);
+}
+h1{text-align: center;
+    margin: 80px auto;
+    font-family: 'Metal Mania';
+    font-size: 80px;
+}
+/* Tour */
+#tour{
+    font-family: 'Open Sans';
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/bg.png');
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#tour>.container{
+    max-width: 932px;
+    margin: 0px auto;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Open Sans';
+    margin-bottom: 3%;
+}
+.button{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 250px;
+    font-size: 20px;
+    padding: 15px 25px;
+    font-family: 'Open Sans';
+    background: rgb(228,0,0);
+    background: linear-gradient(144deg, rgba(228,0,0,1) 0%, rgba(255,32,32,1) 69%, rgba(252,120,120,1) 100%);
+}
+.button:hover{
+    background: rgb(228,100,0);
+}
+h3:nth-child(2){
+    text-align: center;
+    margin: 80px auto;
+}
+.tour-card{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    height: 222px;
+    width: 222px;
+    background-size:cover;
+    flex-wrap: nowrap;
+}
+.tour-town{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+.tour-place{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.tour-date{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    font-style: italic;
+}
+.tour-card:not(:last-child){
+    margin-right: 10px;
+}
+.tour-card>.button{
+    width: 120px;
+    padding: 10px 25px;
+    font-size: 14px;
+    position: absolute;
+    top: 120px;
+    left: 25px;
+}
+.madrid{
+    background-image: url('../img/tour/madrid.jpg');
+}
+.tour-card:before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 222px;
+    width: 222px;
+    opacity: 0.5;
+}
+.hamburg{
+    background-image: url('../img/tour/hamburg.jpg');
+}
+.krakow{
+    background-image: url('../img/tour/krakow.jpg');
+}
+.turin{
+    background-image: url('../img/tour/turin.jpg');
+}
+@media screen and (max-width: 900px)
+{
+    .tour-card{
+        display: block;
+    }
+}
+/* Gallery */
+#gallery{
+    background-color: #404040;
+    background-image: url('../img/bg.png');
+    padding-bottom: 2%;
+}
+#gallery>.container{
+    max-width: 930px;
+    margin: 0px auto;
+}
+.photo{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.photo:not(:nth-child(4)){
+    margin-right: 10px;
+}
+.photo:last-child{
+    margin-right: 0px;
+}
+/* Subscribe */
+#subscribe
+{
+    padding: 40px 0px 80px 0px;
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url('../img/bg-02.jpg');
+    background-position-y: -250px;
+    background-size:cover;
+    text-align: center;
+}
+input{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 0px;
+    background: white;
+    height: 30px;
+    max-width: 200px;
+    font-size: 14px;
+    color: black;
+}
+button{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 135px;
+    font-size: 14px;
+    background: rgb(228,0,0);
+    background: linear-gradient(144deg, rgba(228,0,0,1) 0%, rgba(255,32,32,1) 69%, rgba(252,120,120,1) 100%);
+    padding: 8px 10px;
+    font-family: 'Open Sans';
+    border: 0px solid red;
+    border-radius: 1px;
+}
+button:hover{
+    background: rgb(228,100,0);
+    cursor: pointer;
+}
+p{
+    font-family: 'Open Sans';
+}
+/* Footer */
+footer{
+    font-family: 'Open Sans';
+    background-color: #202020;
+    padding: 2% 0px 2% 0px;
+    text-align: center;
+}
+.social{
+    padding-bottom: 10px;
+}
+.copyright{
+    font-size: 8px;
+}
+.fa{
+    width: 16px;
+    height: 16px;
+    background-size: 78px 52px;
+}
