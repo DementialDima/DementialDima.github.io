@@ -7,6 +7,7 @@ let sendFormBtn = document.getElementById("sendForm");
 let mainForm = document.querySelector("form");
 
 btnByTicket.addEventListener("click", (event) => {
+    event.preventDefault()
     let element = event.target;
 
     if (element.classList.contains("button")) {
@@ -15,6 +16,7 @@ btnByTicket.addEventListener("click", (event) => {
 });
 
 sendFormBtn.addEventListener("click", (event) => {
+    event.preventDefault()
     if (!confirm("Відправити дані?")) {
         event.preventDefault();
         alert("Дані не відправлено");
