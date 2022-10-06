@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитро Гнатюк ПІ-19-01</title>
+    <style>
+        ul {
+
+            display: inline-block;
+            margin-left: 20%;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="add_two_number">Додати два числа</button>
+    <script>
+        let firstNumber = 874;
+        let secondNumber = 369;
+
+        const btnAddTwoNumbers = document.querySelector(".add_two_number");
+
+        btnAddTwoNumbers.addEventListener("click", () => {
+            alert(
+                `Сума чисел ${firstNumber}+${secondNumber}=${firstNumber + secondNumber}`
+            );
+        });
+
+    </script>
+</body>
+
+</html>

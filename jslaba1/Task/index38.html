@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитро Гнатюк ПІ-19-01</title>
+    <style>
+        ul {
+
+            display: inline-block;
+            margin-left: 20%;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        let seasonOfYearNumber = prompt("Введіть номер місяця");
+
+        if (
+            isNaN(seasonOfYearNumber) ||
+            seasonOfYearNumber <= 0 ||
+            seasonOfYearNumber > 12
+        ) {
+            alert("Число має бути >0 і <13");
+        } else {
+            if (
+                (seasonOfYearNumber > 0 && seasonOfYearNumber < 3) ||
+                seasonOfYearNumber == 12
+            )
+                alert("Зима");
+
+            if (seasonOfYearNumber > 2 && seasonOfYearNumber < 6) alert("Весна");
+
+            if (seasonOfYearNumber > 5 && seasonOfYearNumber < 9) alert("Літо");
+            if (seasonOfYearNumber > 9 && seasonOfYearNumber < 12) alert("Осінь");
+        }
+
+    </script>
+</body>
+
+</html>
