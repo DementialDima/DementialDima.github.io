@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гнатюк ПІ-19-01</title>
+</head>
+
+
+<style>
+    div {
+
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+
+<body>
+
+    <div>
+
+
+
+    </div>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+
+
+    <script>
+
+        const arrImages = [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybZhrXL2FAJmyZ3SsLTH2cA3Vp_vOH-Y27Q&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRok2XqKbjMkI8qFrQIMD2BRqJ-9hYq6YcDEg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0dMLP6Gl9uw45nDjJT3N5aOacs4eqkFeR8w&usqp=CAU",
+            "https://blog.tetra.net/uk-ua/wp-content/uploads/2020/12/hupi-populiarna-akvariumna-rybka.jpg",
+
+        ];
+        let i = 0;
+
+        const areaImage = document.querySelector('div');
+        const btnNextImage = document.getElementById('next');
+        const btnPrevImage = document.getElementById('prev');
+
+
+        areaImage.style.backgroundImage = `url(${arrImages[i]})`;
+
+        btnNextImage.addEventListener('click', (event) => {
+            i++;
+            if (i == arrImages.length) i = 0;
+
+            areaImage.style.backgroundImage = `url(${arrImages[i]})`;
+
+
+        });
+
+        btnPrevImage.addEventListener('click', (event) => {
+
+            if (i == 0) i = arrImages.length;
+            i--;
+
+            areaImage.style.backgroundImage = `url(${arrImages[i]})`;
+
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

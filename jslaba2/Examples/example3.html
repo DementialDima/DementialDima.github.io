@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var bgc = document.bgColor;
+        var fgc = document.fgColor;
+        var url = document.location;
+        var lm = document.lastModified;
+
+        document.write("Колір фону цієї сторінки <B>" + bgc + "</B>")
+        document.write("<BR>URL цієї сторінки <B>" + url + "</B>")
+
+        document.write("<BR>Останні зміни внесені- <B>" + lm + "</B>")
+        document.bgColor = "00FFFF";
+        document.writeln("<b>Hello world!</b>");
+    </script>
+</body>
+
+</html>

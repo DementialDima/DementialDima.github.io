@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гнатюк ПІ-19-01</title>
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #images {
+
+        width: 50%;
+        min-height: 150px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+
+    }
+
+    #images div {
+        width: 100%;
+        min-height: 270px;
+        border: 1px solid black;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+
+<body>
+
+    <div id="images">
+        <div class="images_item"></div>
+        <div class="images_item"></div>
+        <div class="images_item"></div>
+
+
+    </div>
+
+
+    <script>
+
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        const arrImages = [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Argiope_bruennichi_01_Yonne.jpg/495px-Argiope_bruennichi_01_Yonne.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Araneus_diadematus_%28aka%29.jpg/390px-Araneus_diadematus_%28aka%29.jpg",
+            "https://mors.in.ua/uploads/posts/2018-02/thumbs/1519665549_1519625039121555212.jpg",
+            "https://mors.in.ua/uploads/posts/2018-02/thumbs/1519665933_151962556814134873.jpg",
+            "https://mors.in.ua/uploads/posts/2018-02/thumbs/1519665288_1519625794190574603.jpg",
+            "https://mors.in.ua/uploads/posts/2018-02/1519666315_151962598517150751.png",
+            "https://mors.in.ua/uploads/posts/2018-02/1519667090_151962634014852889.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Latrodectus_tredecimguttatus_female.jpg/405px-Latrodectus_tredecimguttatus_female.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grass_spider_%28Agelenopsis_naevia%29.JPG/390px-Grass_spider_%28Agelenopsis_naevia%29.JPG",
+            "https://mors.in.ua/uploads/posts/2018-02/thumbs/1519667576_1519626715140679201.jpg"
+        ];
+
+        const containerImages = document.getElementById('images');
+
+        containerImages.addEventListener('mouseover', (event) => {
+            let element = event.target;
+
+
+            if (!element.classList.contains("images_item")) return false;
+
+            let index = Number.parseInt(getRandomArbitrary(0, arrImages.length));
+
+            element.style.backgroundImage = `url(${arrImages[index]})`;
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

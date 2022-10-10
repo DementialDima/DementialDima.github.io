@@ -1,0 +1,31 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Hello, world!</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+
+        var szHelloMsg = "Hello, world!";
+
+        function printNString(szString, n) {
+            var i;
+            for (i = 0; i < n; i++) {
+                document.write(szString + "<BR>");
+            }
+        }
+
+        function printHello() {
+            printNString(szHelloMsg, 10);
+        }
+
+    </SCRIPT>
+</HEAD>
+
+<BODY>
+    <H1>JavaScript Test</H1>
+    <P>Message:<BR>
+        <SCRIPT LANGUAGE="JavaScript">
+            printHello();
+        </SCRIPT>
+</BODY>
+
+</HTML>

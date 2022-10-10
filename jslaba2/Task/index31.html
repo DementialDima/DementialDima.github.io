@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гнатюк ПІ-19-01</title>
+</head>
+<style>
+    form * {
+        display: flex;
+
+    }
+</style>
+
+<body>
+
+
+    <form>
+        <label for="userName" >Ім'я</label>
+        <input type="text" name="userName" placeholder="Name">
+        <input type="checkbox" name="icecream">
+        <label for="icecream">Морозиво</label>
+        <input type="checkbox" name="chocolate">
+        <label for="chocolate">Шоколад</label>
+        <button name="send">Send</button>
+    </form>
+
+
+    <script>
+
+        const form = document.querySelector('form');
+
+        form.userName.addEventListener("focus", (event) => {
+            console.log("Впишіть сюди своє ім'я");
+        });
+
+
+        form.icecream.addEventListener("change", (event) => {
+            console.log("Ви обрали морозиво");
+        });
+
+        form.chocolate.addEventListener("change", (event) => {
+            console.log("Ви обрали шоколад");
+        });
+
+        form.send.addEventListener("click", (event) => {
+            event.preventDefault();
+            alert("Дякуємо за участь в опитуванні!");
+            console.clear();
+            form.reset();
+        });
+
+
+    </script>
+
+</body>
+
+</html>
