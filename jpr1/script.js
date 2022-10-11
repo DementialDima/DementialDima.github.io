@@ -1,5 +1,5 @@
 // Task 1
-document.write("<h1>PR1</h1>");
+document.write("<h1>JPR1</h1>");
 let first = ["a", "b", "c"];
 let second = [1, 2, 3];
 document.write("<h2>Завдання 1</h2>");
