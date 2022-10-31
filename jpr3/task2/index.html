@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.carousel{
+  width: 800px;
+  height: 500px; 
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: aquamarine;
+   border-radius: 10px; 
+   font-size: 0;
+   position: relative;
+}
+ul{
+  width: 10000px; 
+}
+li{
+  display: inline-block; 
+}
+img{
+  display: block;
+  width: 800px;
+  height: 500px;
+}
+button{
+background-color:deepskyblue;
+width:80px;
+height:30px;
+border:none;
+color:white;
+border-radius:8px;
+}
+ 
+.controls{
+  display: flex;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  justify-content: space-between;
+
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="carousel">
+  
+<ul>
+<li><img src="pictures/p1.jpg" /></li>
+<li><img src="pictures/p2.jpg" /></li><li><img src="pictures/p3.jpg" /></li><li><img src="pictures/p4.jpg" /></li>
+</ul>
+<div class="controls">
+  <button id="left-slide">Вліво</button>
+  <button id="right-slide">Вправо</button>
+</div>
+
+</div>
+
+  
+
+<script src="script.js"></script>
+</body>
+</html>
