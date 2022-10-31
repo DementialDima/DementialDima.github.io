@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+function clearTextFromHTMLTags(textForEditing)
+
+{
+var tagTemplate = new RegExp("</?[a-zA-Z]{1,}/?>","g");
+return textForEditing.replace(tagTemplate,"");
+}
+let startText="<p>Hello <br>Good day</p>"
+document.write("Before:"+startText);
+startText=clearTextFromHTMLTags(startText);
+document.write("After:"+startText);
+</script>
+
+</body>
+
+</html>

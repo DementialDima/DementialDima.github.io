@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<p>Результат у консолі</p>
+
+  <script>
+
+function removeRedundantSpaces(text_for_Editing)
+{
+  console.log("RAW text="+text_for_Editing+" length:"+text_for_Editing.length);
+var extraSpaces = new RegExp("[ ]{2,}","g");
+return text_for_Editing.replace(extraSpaces," ");
+}
+const result=removeRedundantSpaces("  Simple te xt  ");
+console.log("AFTER EXECUTING FUNCTION"+result+" length:"+result.length);
+  </script>
+</body>
+</html>

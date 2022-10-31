@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Результат в консолі</p>
+    <script>
+
+function removeSpaceInText(str){
+
+  console.log(str + " length:" + str.length);
+      let reg = new RegExp("^ +| +$", "g");
+      if (reg.test(str)) {
+        str = str.replace(reg, "");
+      }
+   
+      console.log(str + " length:" + str.length);
+
+} 
+      let str = " lo re m  function  ";
+      removeSpaceInText(str);
+   
+   </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <p>Перевірте консоль</p>
+    <script>
+
+function removeHtmlComments(str){
+
+ 
+   console.log("BEFORE "+str);
+       
+      let reg = new RegExp("<!--(.*?)-->", "g");
+      if (reg.test(str)) {
+        str = str.replace(reg, "");
+      }
+       
+      console.log("AFTER "+str);
+}
+
+     let str= '<!-- основна частина сторінки --> <div class="content">...</div><!-- основна частина сторінки --> <div class="content">...</div>"';
+     removeHtmlComments(str);
+
+    </script>
+  </body>
+</html>

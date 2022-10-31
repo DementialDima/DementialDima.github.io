@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task </title>
+  </head>
+  <body>
+    <script>
+      
+       function checkUkrainePhoneNumber(phoneNumber){
+        let reg = new RegExp("^380[3569]{1}[0-9]{8}$", "g");
+       if (reg.test(phoneNumber)) {
+        alert("Correct number  " +phoneNumber);
+      }
+      else {
+        alert("Number is not correct  "+phoneNumber);
+      }
+
+       }
+       checkUkrainePhoneNumber("380975415882");
+    </script>
+  </body>
+</html>
