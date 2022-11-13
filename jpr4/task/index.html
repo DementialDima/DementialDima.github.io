@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+  integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+  crossorigin=""/>
+
+<style>
+
+#map { height: 880px; }
+input{
+height: 15px;
+padding: 5px;
+border: 0.5px solid silver;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 14px;
+
+}
+button{
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  min-width: 120px;
+  height: 50px;
+  border: 2px black;
+  padding: 10px;
+}
+button:nth-child(1){
+  background-color: green;
+}
+button:nth-child(2){
+  background-color: red;
+}
+button:last-child{
+  background-color: blue;
+}
+button:nth-child(1):hover{
+  background-color: darkgreen;
+  cursor: pointer;
+}
+button:nth-child(2):hover{
+  background-color: darkred;
+  cursor: pointer;
+  cursor: pointer;
+}
+button:last-child:hover{
+  background-color: darkblue;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+  <button id="watch">Почати відслідковування</button>
+  <button id="clearWatch">Зупинити відслідковування</button>
+  <p id="watched"></p>
+<form>
+  <input type="text" placeholder="latitude" name="lat">
+  <input type="text" placeholder="long" name="longtud">
+  <button id="setCoordiantsOnMap">Переглянути місце на карті</button>
+</form>
+
+  <div id="map"></div>
+
+
+
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+  integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+  crossorigin=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
