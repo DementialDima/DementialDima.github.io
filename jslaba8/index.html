@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="tabs">
+    <div class="tab-header">
+      <div class="tab-h active" data-tab="0">Border radius</div>
+      <div class="tab-h" data-tab="1">Cursor</div>
+      <div class="tab-h" data-tab="2">Color</div>
+    </div>
+
+
+
+<div class="tabContent">
+
+<div class="border_radius_app">
+  <div>Верхній лівий радіус:
+
+    <input type="range" id="rtl" min="0" max="100" value="0"   > 
+    <input type="text" id="ttl" value="0" disabled>
+        </div>
+ 
+
+
+
+
+
+      
+        <div>
+    Верхній правий радіус:
+    <input type="range" id="rtr" min="0" max="100" value="0"  >
+    <input type="text" id="ttr" value="0"  disabled>
+        </div>
+        
+        <div>
+    Нижній правий радіус:
+    <input type="range" id="rbr" min="0" max="100" value="0"  >
+    <input type="text" id="tbr" value="0" disabled>
+        </div>
+
+
+        <div>
+    Нижній лівий радіус:
+    <input type="range" id="rbl" min="0" max="100" value="0"  >
+    <input type="text" id="tbl" value="0" disabled>
+        </div>
+
+
+    <div id="block"></div>
+  <textarea></textarea>
+   
+</div>
+
+</div>
+
+<div class="tabContent">
+
+  <div class="cursor_app">
+ 
+  <span>Виберіть значення: </span> 
+  <select class="cursor_param">
+      <option value="default">Default</option>
+      <option value="crosshair">Crosshair</option>
+      <option value="help">Help</option>
+      <option value="move">Move</option>
+      <option value="pointer">Pointer</option>
+      <option value="progress">Progress</option>
+      <option value="text">Text</option>
+      <option value="wait">Wait</option>
+      <option value="n-resize">N-resize</option>
+      <option value="ne-resize">Ne-resize</option>
+    </select>
+    <p>cursor: default;</p>
+    <div class="container_cursor">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, dicta deserunt quam fuga non voluptate cumque obcaecati ab temporibus debitis corporis quos animi laudantium assumenda aperiam possimus? Harum, quo reiciendis?  
+    </div>
+    
+  </div>
+
+</div>
+
+<div class="tabContent">
+  <div class="text_color_app">
+
+
+
+    <span>Виберіть колір: </span>
+
+      <input class="color_value" id="col" type="text" value="" />
+
+
+
+
+
+    <p>color : none;</p>
+    <p class="colored_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quis autem laboriosam quibusdam ullam unde amet, fugit nemo provident. Ad error aliquam praesentium recusandae nam soluta tempore, ducimus exercitationem eius?</p>
+  
+  
+  </div>
+
+</div>
+ 
+</div>
+
+ 
+<script src="script.js"></script>
+
+</body>
+</html>
